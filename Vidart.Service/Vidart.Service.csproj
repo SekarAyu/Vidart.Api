@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Impl\.gitkeep" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Impl\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Vidart.Common\Vidart.Common.csproj" />
+    <ProjectReference Include="..\Vidart.Repository\Vidart.Repository.csproj" />
+  </ItemGroup>
+
+</Project>
